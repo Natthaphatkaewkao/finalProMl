@@ -1,0 +1,225 @@
+{
+ "run_id": "709d0cc2131d",
+ "arch": "efficientnet_b0",
+ "stage": "screening",
+ "seed": 42,
+ "max_epochs": 30,
+ "params": {
+  "lr_head": 0.001,
+  "lr_ft": 1e-05,
+  "unfreeze_frac": 0.3,
+  "head_epochs": 3,
+  "dropout": 0.3,
+  "weight_decay": 0.0001,
+  "label_smoothing": 0.0,
+  "aug": "v1",
+  "mixup": false
+ },
+ "batch_size": 32,
+ "history": [
+  {
+   "epoch": 1,
+   "phase": "head",
+   "train_loss": 1.0804895001806711,
+   "train_accuracy": 0.5604440789473685,
+   "val_loss": 1.041290521621704,
+   "val_accuracy": 0.5521472392638037,
+   "val_macro_f1": 0.5112952574938715,
+   "lr": 0.001
+  },
+  {
+   "epoch": 2,
+   "phase": "head",
+   "train_loss": 0.90374719077035,
+   "train_accuracy": 0.6412417763157895,
+   "val_loss": 0.9646604657173157,
+   "val_accuracy": 0.6104294478527608,
+   "val_macro_f1": 0.5669422403418016,
+   "lr": 0.001
+  },
+  {
+   "epoch": 3,
+   "phase": "head",
+   "train_loss": 0.8646917323532858,
+   "train_accuracy": 0.6517269736842105,
+   "val_loss": 0.9355750679969788,
+   "val_accuracy": 0.5950920245398773,
+   "val_macro_f1": 0.5640728371501272,
+   "lr": 0.001
+  },
+  {
+   "epoch": 4,
+   "phase": "finetune",
+   "train_loss": 0.8032020808834779,
+   "train_accuracy": 0.671875,
+   "val_loss": 0.9489105939865112,
+   "val_accuracy": 0.6165644171779141,
+   "val_macro_f1": 0.5836871252574678,
+   "lr": 9.972968368904155e-06
+  },
+  {
+   "epoch": 5,
+   "phase": "finetune",
+   "train_loss": 0.7390935371973013,
+   "train_accuracy": 0.7029194078947368,
+   "val_loss": 0.9207026958465576,
+   "val_accuracy": 0.647239263803681,
+   "val_macro_f1": 0.6204949081887909,
+   "lr": 9.891453042313654e-06
+  },
+  {
+   "epoch": 6,
+   "phase": "finetune",
+   "train_loss": 0.7030506361471979,
+   "train_accuracy": 0.7119654605263158,
+   "val_loss": 0.9319376349449158,
+   "val_accuracy": 0.6288343558282209,
+   "val_macro_f1": 0.6102191800914947,
+   "lr": 9.75634593258921e-06
+  },
+  {
+   "epoch": 7,
+   "phase": "finetune",
+   "train_loss": 0.6833959700245607,
+   "train_accuracy": 0.7193667763157895,
+   "val_loss": 0.8749914765357971,
+   "val_accuracy": 0.656441717791411,
+   "val_macro_f1": 0.6332540898584148,
+   "lr": 9.569127301497944e-06
+  },
+  {
+   "epoch": 8,
+   "phase": "finetune",
+   "train_loss": 0.6460805747069811,
+   "train_accuracy": 0.7401315789473685,
+   "val_loss": 0.89692622423172,
+   "val_accuracy": 0.6441717791411042,
+   "val_macro_f1": 0.6244712518649846,
+   "lr": 9.331848355540107e-06
+  },
+  {
+   "epoch": 9,
+   "phase": "finetune",
+   "train_loss": 0.6229480159910101,
+   "train_accuracy": 0.7450657894736842,
+   "val_loss": 0.9371458888053894,
+   "val_accuracy": 0.6257668711656442,
+   "val_macro_f1": 0.6102645549988069,
+   "lr": 9.047108772501428e-06
+  },
+  {
+   "epoch": 10,
+   "phase": "finetune",
+   "train_loss": 0.5985560650496107,
+   "train_accuracy": 0.75,
+   "val_loss": 0.9351334571838379,
+   "val_accuracy": 0.6226993865030674,
+   "val_macro_f1": 0.6081003689142508,
+   "lr": 8.718028218839265e-06
+  },
+  {
+   "epoch": 11,
+   "phase": "finetune",
+   "train_loss": 0.5839068534735002,
+   "train_accuracy": 0.7625411184210527,
+   "val_loss": 0.8836610913276672,
+   "val_accuracy": 0.6625766871165644,
+   "val_macro_f1": 0.6378981360482311,
+   "lr": 8.348212169964076e-06
+  },
+  {
+   "epoch": 12,
+   "phase": "finetune",
+   "train_loss": 0.5485446986399198,
+   "train_accuracy": 0.7798108552631579,
+   "val_loss": 0.8999268412590027,
+   "val_accuracy": 0.6380368098159509,
+   "val_macro_f1": 0.6281916558332129,
+   "lr": 7.941712407896319e-06
+  },
+  {
+   "epoch": 13,
+   "phase": "finetune",
+   "train_loss": 0.5436456590694817,
+   "train_accuracy": 0.778577302631579,
+   "val_loss": 0.8808311820030212,
+   "val_accuracy": 0.6349693251533742,
+   "val_macro_f1": 0.6232173136032907,
+   "lr": 7.50298262909475e-06
+  },
+  {
+   "epoch": 14,
+   "phase": "finetune",
+   "train_loss": 0.5127429281802554,
+   "train_accuracy": 0.790296052631579,
+   "val_loss": 0.9327173233032227,
+   "val_accuracy": 0.6380368098159509,
+   "val_macro_f1": 0.6225412104675896,
+   "lr": 7.036829648826033e-06
+  },
+  {
+   "epoch": 15,
+   "phase": "finetune",
+   "train_loss": 0.5083351645030474,
+   "train_accuracy": 0.7925575657894737,
+   "val_loss": 0.8912733793258667,
+   "val_accuracy": 0.6380368098159509,
+   "val_macro_f1": 0.6187599494363745,
+   "lr": 6.548360736690771e-06
+  },
+  {
+   "epoch": 16,
+   "phase": "finetune",
+   "train_loss": 0.4861829244580708,
+   "train_accuracy": 0.7954358552631579,
+   "val_loss": 0.9025163650512695,
+   "val_accuracy": 0.6349693251533742,
+   "val_macro_f1": 0.6231563199442457,
+   "lr": 6.0429276603090105e-06
+  },
+  {
+   "epoch": 17,
+   "phase": "finetune",
+   "train_loss": 0.48387999881647137,
+   "train_accuracy": 0.8040707236842105,
+   "val_loss": 0.8699468374252319,
+   "val_accuracy": 0.6441717791411042,
+   "val_macro_f1": 0.6248981223785983,
+   "lr": 5.52606805023426e-06
+  },
+  {
+   "epoch": 18,
+   "phase": "finetune",
+   "train_loss": 0.4723109569596617,
+   "train_accuracy": 0.7974917763157895,
+   "val_loss": 0.9057435393333435,
+   "val_accuracy": 0.6319018404907976,
+   "val_macro_f1": 0.6179608524170768,
+   "lr": 5.003444728514328e-06
+  }
+ ],
+ "val_metrics": {
+  "accuracy": 0.6625766871165644,
+  "macro_precision": 0.6297721452900081,
+  "macro_recall": 0.6675389552341797,
+  "macro_f1": 0.6378981360482311,
+  "min_recall": 0.5172413793103449,
+  "precision_Cotton": 0.8448275862068966,
+  "recall_Cotton": 0.7050359712230215,
+  "f1_Cotton": 0.7686274509803922,
+  "precision_Polyester": 0.6,
+  "recall_Polyester": 0.5783132530120482,
+  "f1_Polyester": 0.588957055214724,
+  "precision_Silk": 0.547945205479452,
+  "recall_Silk": 0.8695652173913043,
+  "f1_Silk": 0.6722689075630253,
+  "precision_Viscose": 0.5263157894736842,
+  "recall_Viscose": 0.5172413793103449,
+  "f1_Viscose": 0.5217391304347826
+ },
+ "train_time_s": 253.93109480000567,
+ "n_params": 4012672,
+ "epochs_trained": 18,
+ "data_fingerprint": "8f66afa23ba6",
+ "code_version": 3
+}

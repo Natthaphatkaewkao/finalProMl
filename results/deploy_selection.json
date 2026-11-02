@@ -1,0 +1,18 @@
+{
+  "run_id": "ac7f583c51bb",
+  "model": "EfficientNet-B0",
+  "seed": 42,
+  "note": "เลือกหลังจูนครบ 4 โมเดล: Val Macro-F1 ต่างจากตัวที่สูงสุด (ConvNeXt-Tiny) ประมาณ 0.01 จึงใช้เกณฑ์เดิม (ต่างไม่เกิน 0.01 เลือกตัวที่เบา/เร็วกว่า) ร่วมกับ Test ที่สูงและนิ่งที่สุด (3 seed) และขนาดเล็กเหมาะกับ CPU · หมายเหตุ: ตัดสินใจหลังเห็นผล Test ของทุกโมเดลแล้ว",
+  "val_macro_f1_mean_after": {
+    "ConvNeXt-Tiny": 0.8441,
+    "DenseNet121": 0.8276,
+    "EfficientNet-B0": 0.8341,
+    "ResNet50": 0.8324
+  },
+  "test_macro_f1_mean_after": {
+    "ConvNeXt-Tiny": 0.791,
+    "DenseNet121": 0.812,
+    "EfficientNet-B0": 0.8326,
+    "ResNet50": 0.8039
+  }
+}

@@ -1,0 +1,225 @@
+{
+ "run_id": "cb0d0ad37d8f",
+ "arch": "efficientnet_b0",
+ "stage": "screening",
+ "seed": 42,
+ "max_epochs": 30,
+ "params": {
+  "lr_head": 0.001,
+  "lr_ft": 1e-05,
+  "unfreeze_frac": 0.3,
+  "head_epochs": 3,
+  "dropout": 0.3,
+  "weight_decay": 0.0001,
+  "label_smoothing": 0.0,
+  "aug": "v2",
+  "mixup": false
+ },
+ "batch_size": 32,
+ "history": [
+  {
+   "epoch": 1,
+   "phase": "head",
+   "train_loss": 1.112532458415157,
+   "train_accuracy": 0.5359786184210527,
+   "val_loss": 1.070799469947815,
+   "val_accuracy": 0.5337423312883436,
+   "val_macro_f1": 0.47721647139123774,
+   "lr": 0.001
+  },
+  {
+   "epoch": 2,
+   "phase": "head",
+   "train_loss": 0.9758249074220657,
+   "train_accuracy": 0.6050575657894737,
+   "val_loss": 1.0291990041732788,
+   "val_accuracy": 0.5828220858895705,
+   "val_macro_f1": 0.5278786405314607,
+   "lr": 0.001
+  },
+  {
+   "epoch": 3,
+   "phase": "head",
+   "train_loss": 0.9195757488671102,
+   "train_accuracy": 0.6229440789473685,
+   "val_loss": 0.9911049008369446,
+   "val_accuracy": 0.5766871165644172,
+   "val_macro_f1": 0.5200789655329192,
+   "lr": 0.001
+  },
+  {
+   "epoch": 4,
+   "phase": "finetune",
+   "train_loss": 0.875809575185964,
+   "train_accuracy": 0.645764802631579,
+   "val_loss": 1.070794939994812,
+   "val_accuracy": 0.5429447852760736,
+   "val_macro_f1": 0.5099191729620256,
+   "lr": 9.972968368904155e-06
+  },
+  {
+   "epoch": 5,
+   "phase": "finetune",
+   "train_loss": 0.8196033172701535,
+   "train_accuracy": 0.6599506578947368,
+   "val_loss": 1.0663695335388184,
+   "val_accuracy": 0.5429447852760736,
+   "val_macro_f1": 0.5058736377935064,
+   "lr": 9.891453042313654e-06
+  },
+  {
+   "epoch": 6,
+   "phase": "finetune",
+   "train_loss": 0.7881376566855531,
+   "train_accuracy": 0.6751644736842105,
+   "val_loss": 1.058502197265625,
+   "val_accuracy": 0.5460122699386503,
+   "val_macro_f1": 0.5202404712318804,
+   "lr": 9.75634593258921e-06
+  },
+  {
+   "epoch": 7,
+   "phase": "finetune",
+   "train_loss": 0.7663206063995236,
+   "train_accuracy": 0.6864720394736842,
+   "val_loss": 1.0370473861694336,
+   "val_accuracy": 0.5521472392638037,
+   "val_macro_f1": 0.5239857281294831,
+   "lr": 9.569127301497944e-06
+  },
+  {
+   "epoch": 8,
+   "phase": "finetune",
+   "train_loss": 0.7440964569778818,
+   "train_accuracy": 0.6938733552631579,
+   "val_loss": 1.0523016452789307,
+   "val_accuracy": 0.5644171779141104,
+   "val_macro_f1": 0.5345758883328827,
+   "lr": 9.331848355540107e-06
+  },
+  {
+   "epoch": 9,
+   "phase": "finetune",
+   "train_loss": 0.7101440374788485,
+   "train_accuracy": 0.7099095394736842,
+   "val_loss": 1.125228762626648,
+   "val_accuracy": 0.5122699386503068,
+   "val_macro_f1": 0.49174481055863745,
+   "lr": 9.047108772501428e-06
+  },
+  {
+   "epoch": 10,
+   "phase": "finetune",
+   "train_loss": 0.6973011840723062,
+   "train_accuracy": 0.7076480263157895,
+   "val_loss": 1.0534038543701172,
+   "val_accuracy": 0.558282208588957,
+   "val_macro_f1": 0.5372468413229283,
+   "lr": 8.718028218839265e-06
+  },
+  {
+   "epoch": 11,
+   "phase": "finetune",
+   "train_loss": 0.6758804672250622,
+   "train_accuracy": 0.7206003289473685,
+   "val_loss": 1.0292177200317383,
+   "val_accuracy": 0.5858895705521472,
+   "val_macro_f1": 0.5609720266749514,
+   "lr": 8.348212169964076e-06
+  },
+  {
+   "epoch": 12,
+   "phase": "finetune",
+   "train_loss": 0.6440444433767545,
+   "train_accuracy": 0.7341694078947368,
+   "val_loss": 1.1078492403030396,
+   "val_accuracy": 0.5429447852760736,
+   "val_macro_f1": 0.5300841300306803,
+   "lr": 7.941712407896319e-06
+  },
+  {
+   "epoch": 13,
+   "phase": "finetune",
+   "train_loss": 0.6366909044353586,
+   "train_accuracy": 0.7335526315789473,
+   "val_loss": 1.041900396347046,
+   "val_accuracy": 0.5552147239263804,
+   "val_macro_f1": 0.5386798632809271,
+   "lr": 7.50298262909475e-06
+  },
+  {
+   "epoch": 14,
+   "phase": "finetune",
+   "train_loss": 0.6157622209897167,
+   "train_accuracy": 0.743421052631579,
+   "val_loss": 1.0993103981018066,
+   "val_accuracy": 0.5306748466257669,
+   "val_macro_f1": 0.5131326436929842,
+   "lr": 7.036829648826033e-06
+  },
+  {
+   "epoch": 15,
+   "phase": "finetune",
+   "train_loss": 0.6061571318852274,
+   "train_accuracy": 0.748766447368421,
+   "val_loss": 1.0781959295272827,
+   "val_accuracy": 0.5368098159509203,
+   "val_macro_f1": 0.5176749891219574,
+   "lr": 6.548360736690771e-06
+  },
+  {
+   "epoch": 16,
+   "phase": "finetune",
+   "train_loss": 0.5892010999745444,
+   "train_accuracy": 0.7514391447368421,
+   "val_loss": 1.057228446006775,
+   "val_accuracy": 0.5306748466257669,
+   "val_macro_f1": 0.5179432538565665,
+   "lr": 6.0429276603090105e-06
+  },
+  {
+   "epoch": 17,
+   "phase": "finetune",
+   "train_loss": 0.5800114670082143,
+   "train_accuracy": 0.7493832236842105,
+   "val_loss": 1.0627285242080688,
+   "val_accuracy": 0.549079754601227,
+   "val_macro_f1": 0.5289078331688576,
+   "lr": 5.52606805023426e-06
+  },
+  {
+   "epoch": 18,
+   "phase": "finetune",
+   "train_loss": 0.5676912181079388,
+   "train_accuracy": 0.7645970394736842,
+   "val_loss": 1.0957903861999512,
+   "val_accuracy": 0.5429447852760736,
+   "val_macro_f1": 0.5244680934710939,
+   "lr": 5.003444728514328e-06
+  }
+ ],
+ "val_metrics": {
+  "accuracy": 0.5858895705521472,
+  "macro_precision": 0.5665758992614632,
+  "macro_recall": 0.6005667801879592,
+  "macro_f1": 0.5609720266749514,
+  "min_recall": 0.4457831325301205,
+  "precision_Cotton": 0.7909090909090909,
+  "recall_Cotton": 0.6258992805755396,
+  "f1_Cotton": 0.6987951807228916,
+  "precision_Polyester": 0.6271186440677966,
+  "recall_Polyester": 0.4457831325301205,
+  "f1_Polyester": 0.5211267605633803,
+  "precision_Silk": 0.4482758620689655,
+  "recall_Silk": 0.8478260869565217,
+  "f1_Silk": 0.5864661654135338,
+  "precision_Viscose": 0.4,
+  "recall_Viscose": 0.4827586206896552,
+  "f1_Viscose": 0.4375
+ },
+ "train_time_s": 322.8161136999988,
+ "n_params": 4012672,
+ "epochs_trained": 18,
+ "data_fingerprint": "8f66afa23ba6",
+ "code_version": 3
+}

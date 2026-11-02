@@ -1,0 +1,52 @@
+{
+  "top1_arch": "resnet50",
+  "top1_round": "texture",
+  "top1_name": "ResNet50",
+  "top1_candidate": "resnet50|texture",
+  "rule": "max Val Macro-F1 over model x round; within 0.01 -> faster inference (ms/img)",
+  "candidates_within_0.01": [
+    "resnet50|texture"
+  ],
+  "val_macro_f1": {
+    "resnet50|none": 0.7460704400952524,
+    "resnet50|v1": 0.6938427548661348,
+    "resnet50|v2": 0.6411586656689854,
+    "resnet50|texture": 0.8044663130089625,
+    "densenet121|none": 0.7680231729055258,
+    "densenet121|v1": 0.569753670254616,
+    "densenet121|v2": 0.5141048409680558,
+    "densenet121|texture": 0.7520332324048975,
+    "efficientnet_b0|none": 0.7399785308298201,
+    "efficientnet_b0|v1": 0.6378981360482311,
+    "efficientnet_b0|v2": 0.5609720266749514,
+    "efficientnet_b0|texture": 0.7101756971311775,
+    "convnext_tiny|none": 0.7897777602675644,
+    "convnext_tiny|v1": 0.6903144046640066,
+    "convnext_tiny|v2": 0.6235264558211854,
+    "convnext_tiny|texture": 0.7897158670167239
+  },
+  "infer_ms_per_img": {
+    "resnet50|none": 8.08210000013787,
+    "resnet50|v1": 7.962700000462064,
+    "resnet50|v2": 8.0350999996881,
+    "resnet50|texture": 10.087550000207557,
+    "densenet121|none": 24.36625000063941,
+    "densenet121|v1": 26.161949999732315,
+    "densenet121|v2": 22.9982500004553,
+    "densenet121|texture": 22.89459999974497,
+    "efficientnet_b0|none": 14.858600000479782,
+    "efficientnet_b0|v1": 13.29965000059019,
+    "efficientnet_b0|v2": 14.455249999627995,
+    "efficientnet_b0|texture": 15.497899999900255,
+    "convnext_tiny|none": 12.631600000531762,
+    "convnext_tiny|v1": 17.042249999576597,
+    "convnext_tiny|v2": 15.778449999743316,
+    "convnext_tiny|texture": 12.915500000417524
+  },
+  "fallback": {
+    "needed": true,
+    "after_test_macro_f1_mean": 0.8039021183683687,
+    "target": 0.85,
+    "note": "decision looks at Test (the only use of Test before the final report)"
+  }
+}

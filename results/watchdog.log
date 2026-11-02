@@ -1,0 +1,8 @@
+2026-11-01 08:31:36 START notebook (ครั้งที่ 1)
+2026-11-01 10:36:06 STOP reason=run_too_long temp=35 run_min=124
+2026-11-01 10:40:55 NOTE user: resume now, pause on heat only -> restarted watchdog --no-time-limit --min-rest-min 0
+2026-11-01 10:40:56 START notebook (ครั้งที่ 1)
+2026-11-01 11:25:36 DONE exit=0
+2026-11-02 01:04:08 NOTE user: tune DenseNet121 + EfficientNet-B0 (tune_others.ipynb), pause on heat only
+2026-11-02 01:04:08 START tune_others.ipynb (ครั้งที่ 1)
+2026-11-02 05:44:21 DONE exit=0

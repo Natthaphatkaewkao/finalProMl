@@ -1,0 +1,91 @@
+{
+  "framework": "torch",
+  "model_file": "best_model.pth",
+  "arch": "efficientnet_b0",
+  "round": "texture",
+  "model_name": "EfficientNet-B0 (aug texture, fine-tuned + Optuna)",
+  "classes": [
+    "Cotton",
+    "Polyester",
+    "Silk",
+    "Viscose"
+  ],
+  "img_size": 224,
+  "preprocessing": "RGB, EXIF-rotated, resize shorter side to 256, center crop 224, ImageNet mean/std",
+  "params": {
+    "lr_head": 0.0005538961430378174,
+    "lr_ft": 6.731971667800858e-05,
+    "unfreeze_frac": 0.9105342937903853,
+    "head_epochs": 5,
+    "dropout": 0.0252060678202585,
+    "weight_decay": 0.0002397365598071537,
+    "label_smoothing": 0.027780522348708887,
+    "aug": "texture",
+    "mixup": false
+  },
+  "seed": 42,
+  "run_id": "ac7f583c51bb",
+  "val_metrics": {
+    "accuracy": 0.8558282208588958,
+    "macro_precision": 0.8430031924597141,
+    "macro_recall": 0.8394978206484867,
+    "macro_f1": 0.8377108412653975,
+    "min_recall": 0.7228915662650602,
+    "precision_Cotton": 0.916083916083916,
+    "recall_Cotton": 0.9424460431654677,
+    "f1_Cotton": 0.9290780141843972,
+    "precision_Polyester": 0.8695652173913043,
+    "recall_Polyester": 0.7228915662650602,
+    "f1_Polyester": 0.7894736842105263,
+    "precision_Silk": 0.8863636363636364,
+    "recall_Silk": 0.8478260869565217,
+    "f1_Silk": 0.8666666666666667,
+    "precision_Viscose": 0.7,
+    "recall_Viscose": 0.8448275862068966,
+    "f1_Viscose": 0.765625
+  },
+  "test_metrics": {
+    "accuracy": 0.8414634146341463,
+    "macro_precision": 0.8201767854075122,
+    "macro_recall": 0.8469607477182736,
+    "macro_f1": 0.8312061053725388,
+    "min_recall": 0.7764705882352941,
+    "precision_Cotton": 0.9097744360902256,
+    "recall_Cotton": 0.8581560283687943,
+    "f1_Cotton": 0.8832116788321168,
+    "precision_Polyester": 0.8354430379746836,
+    "recall_Polyester": 0.7764705882352941,
+    "f1_Polyester": 0.8048780487804879,
+    "precision_Silk": 0.7735849056603774,
+    "recall_Silk": 0.9111111111111111,
+    "f1_Silk": 0.8367346938775511,
+    "precision_Viscose": 0.7619047619047619,
+    "recall_Viscose": 0.8421052631578947,
+    "f1_Viscose": 0.8
+  },
+  "test_before_after": {
+    "after": {
+      "test_macro_f1_mean": 0.8326023851361152,
+      "test_macro_f1_std": 0.0020182643993200983,
+      "test_accuracy_mean": 0.8445121951219513
+    },
+    "before": {
+      "test_macro_f1_mean": 0.718676858665031,
+      "test_macro_f1_std": 0.008810697851478949,
+      "test_accuracy_mean": 0.7388211382113821
+    }
+  },
+  "conf_threshold": 0.6,
+  "infer_ms_per_img": 22.228599998925347,
+  "infer_ms_per_img_cpu": 25.498650000372436,
+  "n_params": 4012672,
+  "fallback_needed": true,
+  "n_images": {
+    "train": 4887,
+    "val": 326,
+    "test": 328
+  },
+  "data_fingerprint": "8f66afa23ba6",
+  "selection_note": "เลือกหลังจูนครบ 4 โมเดล: Val Macro-F1 ต่างจากตัวที่สูงสุด (ConvNeXt-Tiny) ประมาณ 0.01 จึงใช้เกณฑ์เดิม (ต่างไม่เกิน 0.01 เลือกตัวที่เบา/เร็วกว่า) ร่วมกับ Test ที่สูงและนิ่งที่สุด (3 seed) และขนาดเล็กเหมาะกับ CPU · หมายเหตุ: ตัดสินใจหลังเห็นผล Test ของทุกโมเดลแล้ว",
+  "exported_at": "2026-11-02 06:07:08"
+}

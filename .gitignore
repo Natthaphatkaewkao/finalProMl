@@ -1,0 +1,14 @@
+# สภาพแวดล้อม
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ข้อมูลที่เผยแพร่ไม่ได้หรือใหญ่เกิน (ดู README: เริ่มบนเครื่องใหม่)
+dataset/
+unseen_data/*/
+models/runs/
+models/_smoke/
+results/_smoke/
+cache/

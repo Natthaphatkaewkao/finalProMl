@@ -1,0 +1,25 @@
+# FabricSort: ติดตั้งด้วย
+#   python -m venv .venv
+#   .venv\Scripts\activate        (Linux/macOS: source .venv/bin/activate)
+#   pip install -r requirements.txt
+# PyTorch แบบ CUDA 12.6 ใช้ได้กับ driver NVIDIA ตั้งแต่ 528 ขึ้นไป (RTX 4050, driver 556)
+# ต้องระบุ +cu126 เพราะ torch บน PyPI สำหรับ Windows เป็นแบบ CPU อย่างเดียว ถ้าไม่มี GPU ให้ลบ "+cu126"
+--extra-index-url https://download.pytorch.org/whl/cu126
+torch==2.14.0+cu126
+torchvision==0.29.0+cu126  # ResNet50, DenseNet121, EfficientNet-B0, ConvNeXt-Tiny (ImageNet weights)
+numpy>=2.0
+pandas>=2.2
+scikit-learn>=1.6          # StratifiedGroupKFold และตัวชี้วัด
+scipy>=1.13               # McNemar test (binomtest)
+optuna>=4.0               # จูน hyperparameter
+nvidia-ml-py>=12         # อ่านอุณหภูมิการ์ดจอ (พักเมื่อร้อน)
+plotly>=5.24              # กราฟในแอป
+pillow>=11.0
+joblib>=1.4
+tqdm>=4.66
+matplotlib>=3.9
+streamlit>=1.45
+jupyter
+ipykernel
+pytest>=8                 # tests/ (ไม่จำเป็นสำหรับการรัน notebook)
+# timm>=1.0.20            # ใช้เฉพาะขั้นสำรอง (ConvNeXt V2-Tiny) ถ้า Test Macro-F1 หลังจูน < 0.85
